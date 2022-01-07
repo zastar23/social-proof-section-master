@@ -91,3 +91,35 @@
     color: var(--soft_pink);
     opacity: .7;
 }
+
+@media (min-width: 1400px) {
+    .main {
+        width: 80%;
+        margin: 3em auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .stars__div {
+        grid-column: 2 / 4;
+        margin: 0;
+    }
+
+    .star__div {
+        display: flex;
+        gap: 3em;
+        justify-content: start;
+    }
+
+    .star__div:nth-child(2) {
+        justify-content: center;
+    }
+
+    .star__div:nth-child(3) {
+        justify-content: end;
+    }
+
+}
+
+
