@@ -23,3 +23,130 @@
     --white: hsl(0, 0%, 100%);
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro__div {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.title {
+    color: var(--very_dark_magenta);
+    margin: 0 auto 2rem;
+    font-size: var(--step-5);
+}
+
+.intro__text {
+    color:hsl(300, 43%, 22%);
+    opacity: .7;
+    font-size: var(--step-0);
+}
+
+.stars__div {
+    text-align: center;
+}
+
+.star__div {
+    margin: .5rem auto 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    color:hsl(300, 43%, 22%);
+    font-weight: 900;
+    background-color: var(--light_grayish_magenta);
+    padding: .5rem 1.5rem;
+    font-size: var(--step-0);
+}
+
+.card {
+    background-color: hsl(300, 43%, 22%);
+    margin: 1rem auto 1rem;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 20rem;
+}
+
+.flex {
+    display: flex;
+    gap: 1.3rem;
+}
+
+.check {
+    color:hsl(333, 80%, 67%);
+    font-weight: 500;
+    opacity: .7;
+}
+
+.portret {
+    border-radius: 40px;
+    width: 2.5rem;
+}
+
+.name__div {
+    align-self: start;
+}
+
+.card__text {
+    margin: 1rem auto .5rem;
+    font-size: var(--step-0);
+}
+
+@media (min-width: 1300px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .intro__div {
+        width: 40rem;
+        text-align: left;
+    }
+
+    .star__div {
+        flex-direction: row;
+        gap: 2rem;
+        position: relative;
+        padding: 1rem 2rem;
+    }
+
+    .star__div:nth-of-type(2) {
+        left: 3rem;
+    }
+
+    .star__div:nth-of-type(3) {
+        left: 6rem;
+    }
+
+    .cards__div {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        margin: 5rem auto 0;
+    }
+
+    .card {
+        max-width: 30rem;
+    }
+
+    article:nth-of-type(1) {
+        margin-bottom: 5rem;
+    }
+
+    article:nth-of-type(2) {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    article:nth-of-type(3) {
+        margin-top: 5rem;
+    }
+
+}
